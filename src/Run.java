@@ -1,13 +1,11 @@
-/**
- * Created by Jacob on 2/09/2016.
- */
+//find the player with the least cards at the end
+
 public class Run {
     public static void main(String[] args) {
 
-        Game game1 = new Game();
+        Game game1 = new Game(Interface.getPlayers());
 
-
-
+        game1.startGame();
 
     }
 }

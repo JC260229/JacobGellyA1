@@ -1,19 +1,15 @@
-/**
- * Created by Jacob on 2/09/2016.
- */
-public class Supertrump extends Card{
-    String superTrumpcCategory;
 
-    public Supertrump(String name, String superTrumpCatagory){
+public class Supertrump extends Card{
+
+    public Supertrump(String name, String superTrumpCategory){
         super(name);
         this.superTrump = true;
-        this.superTrumpcCategory = superTrumpCatagory;
-
+        this.superTrumpCategory = superTrumpCategory;
     }
 
     @Override
     public String toString() {
-        return "- " + name + " -" +
-                "\nCategory changed to: " + this.superTrumpcCategory + "\n";
+        return "\n--- " + name + " ---" +
+                "\nCategory change: " + this.superTrumpCategory + "\n------------------";
     }
 }
